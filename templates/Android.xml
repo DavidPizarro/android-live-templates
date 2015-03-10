@@ -1,0 +1,1032 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templateSet group="Android">
+  <template name="temp_classtag" value="private static final String LOG_TAG = $className$.class.getSimpleName();" description="A static logtag with your current classname" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_new_activity" value="Intent intent = new Intent($context$, $className$.class);&#10;//intent.putExtra(&quot; &quot;, &quot; &quot;);&#10;getActivity().startActivity(intent);" description="Start a new activity" toReformat="true" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="className" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_toast" value="Toast.makeText($className$.this, &quot;$text$&quot;, Toast.LENGTH_SHORT).show();" description="Create a new toast" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <variable name="text" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_psf" value="private static final $name$;" description="private static final variable with type and member" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_psfs" value="private static final String $name$;" description="private static final String" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_psfb" value="private static final boolean $name$;" description="private static final boolean" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_psfi" value="private static final int $name$;" description="private static final int" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_runui" value="getActivity().runOnUiThread(new Runnable() {&#10;  @Override&#10;  public void run() {&#10;    $cursor$&#10;  }&#10;});" description="runOnUIThread" toReformat="true" toShortenFQNames="true">
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_foreach" value="for ($i$ : $data$) {&#10;  $cursor$&#10;}" description="Create a for each loop" toReformat="false" toShortenFQNames="true">
+    <variable name="i" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="data" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="cursor" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_const_int" value="private static final int $NAME$ = $VALUE$;" description="private static final int" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="0" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_const_string" value="private static final String $NAME$ = $VALUE$;" description="private static final String" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  
+  <template name="temp_const_boolean" value="private static final boolean $NAME$ = $VALUE$;" description="private static final boolean" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_const_long" value="private static final long $NAME$ = $VALUE$;" description="private static final long" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="VALUE" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_res_string" value="resources.getString(R.string.$stringId$)" description="resources.getString(...)" toReformat="false" toShortenFQNames="true">
+    <variable name="stringId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_res_drawable" value="getResources().getDrawable(android.R.drawable.$resourceId$);" description="resources.getDrawable(...)" toReformat="false" toShortenFQNames="true">
+    <variable name="resourceId" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="false" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+<template name="temp_handlerpost" value="$VAR$.post(new Runnable() {&#10;    public void run() {&#10;        $END$&#10;&#9;&#9;&#9; }&#10;});" description="Implement handle post method" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_path_assets" value="&quot;file:///android_asset/$END$&quot;" description="Assets directory path" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_find_button" value="$VAR$ = (Button) findViewById(R.id.$END$);" description="findViewById Button" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+<template name="temp_find_text" value="$VAR$ = (TextView) findViewById(R.id.$END$);" description="findViewById TextView" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+<template name="temp_find_edit" value="$VAR$ = (EditText) findViewById(R.id.$END$);" description="findViewById EditText" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+
+<template name="temp_find_list" value="$VAR$ = (ListView) findViewById(R.id.$END$);" description="findViewById ListView" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_find_image" value="$VAR$ = (ImageView) findViewById(R.id.$END$);" description="findViewById ImageView" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+<template name="temp_find_progress" value="$VAR$ = (ProgressBar) findViewById(R.id.$END$);" description="findViewById ProgressBar" toReformat="false" toShortenFQNames="true">
+    <variable name="VAR" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JSP" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="HAML" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+  <template name="temp_handler" value="new android.os.Handler() {&#10;    @Override&#10;    public void handleMessage(android.os.Message msg) {&#10;        $END$&#10;    }&#10;};" description="Creates a new handler object." toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_inflate" value="android.view.LayoutInflater inflater = LayoutInflater.from($context$);&#10;android.view.View view = inflater.inflate(R.layout.$layout$, $parent$, $attach$);" description="Create layoutInflater and inflate view" toReformat="false" toShortenFQNames="true">
+    <variable name="context" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="layout" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="attach" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_logd" value="android.util.Log.d(&quot;$TAG$&quot;, &quot;$MSG$&quot;);" description="Send a DEBUG log message." toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_loge" value="android.util.Log.e(&quot;$TAG$&quot;, &quot;$MSG$&quot;);" description="Send a ERROR log message." toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_logv" value="android.util.Log.v(&quot;$TAG$&quot;, &quot;$MSG$&quot;);" description="Send a VERBOSE log message." toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_logw" value="android.util.Log.w(&quot;$TAG$&quot;, &quot;$MSG$&quot;);" description="Send a WARN log message." toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_logi" value="android.util.Log.i(&quot;$TAG$&quot;, &quot;$MSG$&quot;);" description="Send a INFO log message." toReformat="false" toShortenFQNames="true">
+    <variable name="TAG" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="MSG" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_CODE" value="true" />
+      <option name="JAVA_STATEMENT" value="true" />
+      <option name="JAVA_EXPRESSION" value="true" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="true" />
+      <option name="JAVA_STRING" value="true" />
+      <option name="COMPLETION" value="true" />
+    </context>
+  </template>
+  <template name="temp_parcelable" value="protected $className$(Parcel in) {&#10;  &#10;}&#10;  &#10;@Override&#10;public int describeContents() {&#10;  return 0;&#10;}&#10;&#10;@Override&#10;public void writeToParcel(Parcel dest, int flags) {&#10;  &#10;}&#10;&#10;public static final Parcelable.Creator&lt;$className$&gt; CREATOR = new Parcelable.Creator&lt;$className$&gt;() {&#10;  @Override&#10;  public $className$ createFromParcel(Parcel in) {&#10;    return new $className$(in);&#10;  }&#10;&#10;  @Override&#10;  public $className$[] newArray(int size) {&#10;    return new $className$[size];&#10;  }&#10;};" description="Create a parcelable block for your current class" toReformat="true" toShortenFQNames="true">
+    <variable name="className" expression="className()" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="false" />
+      <option name="XSL_TEXT" value="false" />
+      <option name="XML" value="false" />
+      <option name="JAVA_CODE" value="false" />
+      <option name="JAVA_STATEMENT" value="false" />
+      <option name="JAVA_EXPRESSION" value="false" />
+      <option name="JAVA_DECLARATION" value="true" />
+      <option name="JAVA_COMMENT" value="false" />
+      <option name="JAVA_STRING" value="false" />
+      <option name="COMPLETION" value="false" />
+      <option name="CSS_PROPERTY_VALUE" value="false" />
+      <option name="CSS_DECLARATION_BLOCK" value="false" />
+      <option name="CSS_RULESET_LIST" value="false" />
+      <option name="CSS" value="false" />
+      <option name="JAVA_SCRIPT" value="false" />
+      <option name="TypeScript" value="false" />
+      <option name="HAML" value="false" />
+      <option name="JSP" value="false" />
+      <option name="SQL" value="false" />
+      <option name="ColdFusion" value="false" />
+      <option name="CoffeeScript" value="false" />
+      <option name="CUCUMBER_FEATURE_FILE" value="false" />
+      <option name="GROOVY" value="false" />
+      <option name="GROOVY_EXPRESSION" value="false" />
+      <option name="GROOVY_STATEMENT" value="false" />
+      <option name="GROOVY_DECLARATION" value="false" />
+      <option name="OGNL" value="false" />
+      <option name="MAVEN" value="false" />
+      <option name="ASPECTJ" value="false" />
+      <option name="ACTION_SCRIPT" value="false" />
+      <option name="MXML" value="false" />
+      <option name="GSP" value="false" />
+      <option name="OTHER" value="false" />
+    </context>
+  </template>
+</templateSet>
+
