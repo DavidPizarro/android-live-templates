@@ -2,6 +2,8 @@
 
 A collection of Android Studio Live Templates for Android development.
 
+![](art/demo.gif)
+
 ### Android.xml
 - **`temp_classtag`**: "A static logtag with your current classname"
 - **`temp_const_boolean`**: "private static final boolean"
@@ -16,7 +18,7 @@ A collection of Android Studio Live Templates for Android development.
 - **`temp_find_text`**: "findViewById TextView"
 - **`temp_foreach`**: "Create a for each loop"
 - **`temp_handler`**: "Creates a new handler object"
-- **`temp_handlerpost`**: "Implement handle post method"
+- **`temp_handlerpost`**: "Implement handler post method"
 - **`temp_inflate`**: "Create layoutinflater and inflate view"
 - **`temp_logd`**: "Send a DEBUG log message"
 - **`temp_loge`**: "Send an Error log message"
