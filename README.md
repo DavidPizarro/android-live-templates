@@ -42,22 +42,23 @@ Installation
  * OPTION 1
  
  
-    1. Close Android Studio
-    2. Download `Android.xml`
-    3. Save it to `~/Library/Preferences/AndroidStudio/templates`
-    4. Open Android Studio
-    5. Now, you can write `'temp_...'`
+    1. Download `Android.xml`
+    2. Save it to `~/Library/Preferences/AndroidStudio/templates`
+    3. Restart Android Studio if it's running
+    4. Now, you can write `'temp_...'`
 
  * OPTION 2
 
- * Coming Soon...
+    1. Clone / Download the proyecto.
+    2. Run the `install.sh` script.
+    3. Restart Android Studio if it's running
+    4. Now, you can write `'temp_...'`
+
 
 ##Contribution
 1. Fork
 2. Add your own live templates
-4. Send me a pull request
-5. Wait
-6. Profit
+3. Send me a pull request
 
 Author
 -------
