@@ -9,5 +9,4 @@ do
 done
 
 echo "Done."
-echo ""
 echo "Restart AndroidStudio and enjoy!"
