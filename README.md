@@ -17,7 +17,7 @@ A collection of Android Studio Live Templates for Android development.
 - **`temp_find_progress`**: "findViewById ProgressBar"
 - **`temp_find_text`**: "findViewById TextView"
 - **`temp_foreach`**: "Create a for each loop"
-- **`temp_handler`**: "Creates a new handler object"
+- **`temp_handler`**: "Create a new handler object"
 - **`temp_handlerpost`**: "Implement handler post method"
 - **`temp_inflate`**: "Create layoutinflater and inflate view"
 - **`temp_logd`**: "Send a DEBUG log message"
@@ -34,9 +34,15 @@ A collection of Android Studio Live Templates for Android development.
 - **`temp_psfs`**: "private static final String"
 - **`temp_res_drawable`**: "resources.getDrawable(...)"
 - **`temp_res_string`**: "resources.getString(...)"
+- **`temp_res_color`**: "resources.getColor(...)"
 - **`temp_runui`**: "runOnUIThread"
 - **`temp_toast`**: "Create a new Toast message"
-
+- **`temp_newinstance`**: "Create a new Fragment instance with arguments"
+- **`temp_key`**: "Key variable for preferences, bundles...
+- **`temp_calendar`**: "Get a current Calendar"
+- **`temp_listener`**: "Observer Design Pattern (Listener)"
+- **`temp_porterduff`**: "A color filter that can be used to tint a drawable"
+- **`temp_attrs`**: "Retrieve XML attributes with style and theme information applied"
 
 Installation
 ------------
