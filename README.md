@@ -57,7 +57,7 @@ Installation
 
  * OPTION 2
 
-    1. Clone / Download the proyecto.
+    1. Clone / Download the proyect.
     2. Run the `install.sh` script.
     3. Restart Android Studio if it's running
     4. Now, you can write `'temp_...'`
